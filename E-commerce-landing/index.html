@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paws n' Play | Free Responsive E-commerce Landing Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+      :root{
+    --navy:#0d1b2a;
+  }
+  body{ font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .bg-navy{ background-color: var(--navy); }
+  .text-navy{ color: var(--navy); }
+  .hero-section{
+    background: linear-gradient(90deg, rgba(13,27,42,.85) 0%, rgba(13,27,42,.55) 45%, rgba(13,27,42,0) 75%),
+                url('../images/Hero_bg.png') center/cover no-repeat;
+    min-height: 480px;
+  }
+  .btn-outline-light-rounded{
+    border-radius: 30px;
+  }
+  .service-tile{
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+  }
+  .service-tile img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .service-tile .service-label{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .team-photo{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: .5rem;
+  }
+  .eyebrow{
+    font-weight: 600;
+  }
+  footer a{
+    text-decoration: none;
+    color: #cbd5e1;
+  }
+  footer a:hover{
+    color: #fff;
+  }
+  .footer-links{
+    font-size: .8rem;
+  }
+  .footer-links li{
+    margin-bottom: .4rem;
+  }
+  .social-icon{
+    color: #fff;
+    font-size: 1rem;
+  }
+  </style>
+<!--NAVBAR-->
+<section class="hero-section">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">🐾 Paws n' Play</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+
+                <a href="#" class="btn btn-light rounded-pill px-4">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container py-5 text-white">
+
+        <div class="row align-items-center" style="min-height:80vh;">
+
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold">
+                    Pawsitively Perfect: Where Every Pet's Dream Comes True!
+                </h1>
+
+                <p class="my-4">
+                    Welcome to Paws n' Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship.
+                </p>
+
+                <a href="#" class="btn btn-outline-light rounded-pill px-4">
+                    Shop Now 🐾
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<!-- Shop / Featured Products -->
+<section id="shop" class="container py-5">
+  <h6 class="eyebrow text-secondary">🐾 Shop</h6>
+  <hr>
+  <div class="border rounded p-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-3">
+      <h4 class="mb-0">Featured Products</h4>
+      <input type="search" class="form-control" style="max-width:220px" placeholder="Search">
+    </div>
+    <div class="d-flex flex-wrap gap-2 mb-4">
+      <button class="btn btn-navy btn-sm bg-navy text-light">Random</button>
+      <button class="btn btn-outline-secondary btn-sm">Cat</button>
+      <button class="btn btn-outline-secondary btn-sm">Dogs</button>
+      <button class="btn btn-outline-secondary btn-sm">Fish</button>
+      <button class="btn btn-outline-secondary btn-sm">Birds</button>
+    </div>
+    <div class="row g-3">
+      <div class="col-12 col-md-4">
+        <img src="../images/chemarro_about_a_design_of_a_pet_food_package_d4a19910-8b5f-4d58-b551-ed8984c3d276.png" class="img-fluid rounded" alt="Cat food product">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="../images/chemarro_about_a_design_of_a_pet_food_package_d4a19910-8b5f-4d58-b551-ed8984c3d276 (1).png" class="img-fluid rounded" alt="Pet treat box">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="../images/chemarro_about_a_design_of_a_pet_food_package_d4a19910-8b5f-4d58-b551-ed8984c3d276 (2).png" class="img-fluid rounded" alt="Dog food product">
+      </div>
+    </div>
+    <div class="text-end mt-3">
+      <a href="#" class="text-navy fw-semibold">View More >>></a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="container py-5">
+  <h6 class="eyebrow text-secondary">🐾 Services</h6>
+  <hr>
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="service-tile">
+            <img src="../images/Frame 24.png" alt="Grooming service" style="height:50%">
+           
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="service-tile">
+            <img src="../images/Frame 27.png" alt="Veterinary service" style="height:50%">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="service-tile">
+            <img src="../images/Frame 25.png" alt="Boarding service"style="height:50%">
+            
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="service-tile">
+            <img src="../images/Frame 26.png " alt="Training service" style="height:50%">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="service-tile h-100">
+        <img src="../images/Frame 29.png " alt="Adoption service" style="height:100%; min-height:456px;">
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team -->
+<section id="team" class="container py-5">
+  <h6 class="eyebrow text-secondary">🐾 Our Team</h6>
+  <hr>
+  <div class="row g-4">
+    <div class="col-6 col-md-3 text-center text-md-start">
+      <img src="../images/unsplash_DEQAyBEDRQE.png "class="team-photo mb-2" alt="Dr.Olivia Rhye"  style= "height:80%;">
+      <h6>Dr. Olivia Rhye</h6>
+      <small class="text-secondary">Senior Veterinarian</small>
+    </div>
+    <div class="col-6 col-md-3 text-center text-md-start">
+      <img src="../images/unsplash_O13B7suRG4A.png" class="team-photo mb-2" alt="Phoenix Baker" style= "height:80%;" >
+      <h6 class="mb-0">Phoenix Baker</h6>
+      <small class="text-secondary">Asst. Veterinarian</small>
+    </div>
+    <div class="col-6 col-md-3 text-center text-md-start">
+      <img src="../images/unsplash_E6Vo_4i-3Xg.png" class="team-photo mb-2" alt="Lana Steiner" style= "height:80%;" >
+      <h6 class="mb-0">Lana Steiner</h6>
+      <small class="text-secondary">Resident Veterinarian</small>
+    </div>
+    <div class="col-6 col-md-3 text-center text-md-start">
+      <img src="../images/unsplash_eGbmOTQxF04.png" class="team-photo mb-2" alt="Demi Wilkinson"  style= "height:80%;" >
+      <h6 class="mb-0">Demi Wilkinson</h6>
+      <small class="text-secondary">Intern Veterinarian</small>
+    </div>
+  </div>
+</section>
+
+<!-- Get in touch -->
+<section id="contact" class="bg-navy text-white py-5">
+  <div class="container">
+
+    <h5 class="mb-4">🐾  Get in touch</h5>
+
+    <div class="row g-5">
+
+      <!-- Form -->
+      <div class="col-lg-6">
+        <div class="bg-white rounded-3 shadow p-4">
+
+          <form>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label small">First name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label small">Last name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small">Email</label>
+              <input type="email" class="form-control" placeholder="you@company.com">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small">Message</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label small" style="color:gray;">
+                You agree to our friendly privacy policy.
+              </label>
+            </div>
+
+            <button class="btn bg-navy text-white w-100">
+              Send message
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6">
+
+        <div class="row">
+
+          <div class="col-6 mb-4">
+            <i class="bi bi-envelope fs-5"></i>
+            <h6 class="mt-2">Email</h6>
+            <small class="text-secondary d-block">
+              Our friendly team is here to help.
+            </small>
+            <p class="mt-2 mb-0">hello@pawsnplay.com</p>
+          </div>
+
+          <div class="col-6 mb-4">
+            <i class="bi bi-chat fs-5"></i>
+            <h6 class="mt-2">Live chat</h6>
+            <small class="text-secondary d-block">
+              Our friendly team is here to help.
+            </small>
+            <p class="mt-2 mb-0">Start new chat</p>
+          </div>
+
+          <div class="col-6">
+            <i class="bi bi-geo-alt fs-5"></i>
+            <h6 class="mt-2">Office</h6>
+            <small class="text-secondary d-block">
+              Come say hello at our office HQ.
+            </small>
+            <p class="mt-2 mb-0">
+              123, Yaya Abatan st,<br>
+              Ogba Lagos.
+            </p>
+          </div>
+
+          <div class="col-6">
+            <i class="bi bi-telephone fs-5"></i>
+            <h6 class="mt-2">Phone</h6>
+            <small class="text-secondary d-block">
+              Mon-Fri from 8am to 5pm.
+            </small>
+            <p class="mt-2 mb-0">+234 901234 384</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="bg-navy border-top border-secondary py-5">
+
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 mb-3">
+        <h5>Join our newsletter</h5>
+
+        <p class="text-secondary mb-0">
+          Be the first to receive latest updates on promo, sales and offers
+        </p>
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="input-group">
+
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email">
+
+          <button class="btn btn-light">
+            Subscribe
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy text-white pt-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-3 mb-4">
+<h5>🐾 Paws n' Play</h5>
+
+<p class="text-secondary small">
+Where wagging tails and purring hearts reign supreme!
+</p>
+
+</div>
+
+<div class="col-6 col-lg">
+<h6>Shop</h6>
+
+<ul class="list-unstyled small">
+
+<li>Pet Adoption</li>
+
+<li>Nutrition</li>
+
+<li>Pet Care</li>
+
+<li>Pet Food</li>
+
+<li>Pricing</li>
+
+</ul>
+
+</div>
+
+<div class="col-6 col-lg">
+<h6>Company</h6>
+
+<ul class="list-unstyled small">
+
+<li>About us</li>
+
+<li>Careers</li>
+
+<li>Press</li>
+
+<li>News</li>
+
+<li>Contact</li>
+
+</ul>
+
+</div>
+
+<div class="col-6 col-lg">
+<h6>Services</h6>
+
+<ul class="list-unstyled small">
+
+<li>Grooming</li>
+
+<li>Boarding</li>
+
+<li>Training</li>
+
+<li>Veterinary</li>
+
+<li>Support</li>
+
+</ul>
+
+</div>
+
+<div class="col-6 col-lg">
+<h6>Social</h6>
+
+<ul class="list-unstyled small">
+
+<li>Twitter</li>
+
+<li>LinkedIn</li>
+
+<li>Facebook</li>
+
+<li>AngelList</li>
+
+<li>Dribbble</li>
+
+</ul>
+
+</div>
+
+<div class="col-6 col-lg">
+<h6>Legal</h6>
+
+<ul class="list-unstyled small">
+
+<li>Terms</li>
+
+<li>Privacy</li>
+
+<li>Cookies</li>
+
+<li>Licenses</li>
+
+<li>Settings</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<hr class="border-secondary">
+
+<div class="d-flex justify-content-between align-items-center flex-wrap">
+
+<p class="small text-secondary mb-0">
+© 2024 Paws n' Play. All rights reserved.
+</p>
+
+<div>
+
+<i class="bi bi-twitter me-3"></i>
+
+<i class="bi bi-linkedin me-3"></i>
+
+<i class="bi bi-facebook me-3"></i>
+
+<i class="bi bi-github me-3"></i>
+
+<i class="bi bi-dribbble"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
