@@ -1,0 +1,106 @@
+/* Minimal custom CSS — only what Bootstrap utilities can't cover */
+
+.bg-primary-custom {
+  background-color: #0d3f8f;
+}
+.text-primary-custom {
+  color: #0d3f8f;
+}
+
+/* Cart mini-dropdown positioning */
+.cart-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  max-width: 90vw;
+  z-index: 1050;
+}
+
+/* Hero banner product image */
+.hero-banner {
+  min-height: 380px;
+  overflow: hidden;
+}
+.hero-img {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  max-height: 90%;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+}
+.dot.active {
+  background: #222;
+}
+
+/* Promo cards */
+.promo-card {
+  min-height: 160px;
+  overflow: hidden;
+}
+.promo-img {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  max-height: 100%;
+}
+
+/* ---------- Responsive breakpoints ---------- */
+
+/* Tablets */
+@media (max-width: 991.98px) {
+  .hero-banner {
+    min-height: 320px;
+  }
+  .hero-img {
+    max-height: 75%;
+    right: 15px;
+  }
+}
+
+/* Phones */
+@media (max-width: 767.98px) {
+  .hero-banner {
+    min-height: 260px;
+    text-align: center;
+  }
+  .hero-banner p.text-muted {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-img {
+    position: static;
+    display: block;
+    margin: 1.25rem auto 0;
+    max-height: 180px;
+  }
+  .hero-banner .btn {
+    margin: 0 auto;
+  }
+  .promo-card {
+    min-height: 200px;
+    text-align: center;
+  }
+  .promo-img {
+    position: static;
+    display: block;
+    margin: 1rem auto 0;
+    max-height: 120px;
+  }
+  .cart-dropdown {
+    right: -60px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .cart-dropdown {
+    right: -90px;
+  }
+}
